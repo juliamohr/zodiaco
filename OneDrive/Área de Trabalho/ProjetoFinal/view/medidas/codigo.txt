@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro medidas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastre suas medidas</h1>
+        <div>
+            <form action="">
+                <label for="peso">
+                    <span>Peso</span>
+                    <input type="number" id="peso" nome= "peso">
+               
+                </label>
+                <label for="altura">
+                    <span>Altura</span>
+                    <input type="number" id="peso" nome= "peso">
+                
+                </label>
+                <label for="cintura">
+                    <span>Medida da cintura</span>
+                    <input type="number" id="cintura" nome= "cintura">
+               
+                </label>
+                <label for="quadril">
+                    <span>Medida do quadril</span>
+                    <input type="number" id="quadril" nome= "quadril">
+                
+                </label>
+                <label for="busto">
+                    <span>Medida do busto</span>
+                    <input type="number" id="busto" nome= "busto">
+                
+            
+                
+                </label>
+                
+                <input type="submit" value="Finalizar cadastro" id="button">
+                </form>
+        
+    </main>
+    <section class="images">
+        <img src="logo.jpg" alt="logo">
+        <div class="circle"></div>
+    </section>
+
+
+</body>
+</html>
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+body{
+    background: #f5f3ef;
+    color: black;
+    font-weight: 500;
+    display: flex;
+    min-height: 100vh;
+}
+main{
+
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main h1 {
+    color: black ;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form label{
+    display: flex;
+    flex-direction: column;
+}
+main form label span{
+    font-size: 1.1rem ;
+    margin-top: 2rem;
+
+}
+
+main form input {
+
+    background: #CFBFBF ;
+    width: 300px;
+    height: 40px;
+    padding: 0 0.5rem;
+    margin-top: 1rem;
+    outline: black ;
+    color: rgba (white);
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px;
+}
+
+main form input[type="submit"] {
+    cursor: pointer;
+    width: 60%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 32px;
+    background: #6C63FF;
+    color: white;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
+
+main form input[type="submit"]:hover {
+    background: #5952d4;
+}
+
+section.images {
+    width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 4rem;
+}
+
+section.images img {
+    width: 100%;
+}
+
+section.images .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #E8CBC0, #b4bad6);
+    clip-path: circle(50% at right 80%);
+    z-index: -1;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+    section.images img {
+        width: 110%;
+    }
+
+    section.images .circle {
+        clip-path: circle(35% at right 100%);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    section.images {
+        display: none;
+        visibility: hidden;
+    }
+
+    main {
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main h1 {
+        font-size: 2rem;
+    }
+
+    main .alternative span {
+        font-size: 0.8rem;
+    }
+
+    main form label span, main form input[type="submit"] {
+        font-size: 1rem;
+    }
+}

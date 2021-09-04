@@ -1,0 +1,341 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  min-height: calc(100vh - 1rem);
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  
+  
+  
+}
+
+svg {
+  flex-shrink: 0;
+  width: 600px;
+  max-width: 90vw;
+}
+
+
+body {
+  height: 100%;
+  background: #FAFAFA;
+ 
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.boneca{
+  align-items: center;
+  justify-content: center;
+}
+.tab-bar {
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+  
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.tab {
+  width: 150px;
+  padding: 20px 0;
+  background: white;
+  color: #ee9ca7;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.indicator {
+  width: 150px;
+  height: 3px;
+  background: #a7bfe8;
+  position: absolute;
+  margin-top: 58px;
+  margin-left:0;
+  
+  -webkit-transition: margin 0.5s ease;
+  
+  transition: margin 0.5s ease;
+}
+
+.cercle {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+}
+
+.light .cercle {background: white}
+.dark .cercle {background: black}
+
+.anim {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  -webkit-animation: touch 1.2s ease-out;
+          animation: touch 1.2s ease-out;
+}
+
+@-webkit-keyframes touch {
+  100% { 
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    margin: -300px;
+  }
+}
+
+@keyframes touch {
+  100% { 
+    width: 600px;
+    height: 600px;
+    border-radius: 600px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    margin: -300px;
+  }
+}
+
+.logo {
+	font-family: "Oswald", sans-serif;
+	font-size: 3.125rem;
+	font-weight: 400;
+	letter-spacing: 0.4375rem;
+  align-items: center;
+  justify-content: center
+ 
+}
+
+.quick-logo {
+	color: #ee9ca7;
+	line-height: 0.9;
+	padding: 10px 0px 2px 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -400px;
+  right: -870px;
+}
+
+
+
+.eats-logo {
+	background: #ff9b9c;
+	bottom: 0.625rem;
+	border-radius: 1rem 0 0 1rem;
+	color: #6a696a;
+	font-weight: 500;
+	line-height: 1.0;
+	padding: 0 0 0.3rem 0.875rem;
+	position: relative;
+  top: -400px;
+  right: -1000px
+}
+
+
+.filled-items {
+	color: #6a696a;
+	font-size: 11px;
+	padding: 5px 12px 12px 12px;
+  border-radius: 0.7rem 0.7rem 0 0;
+  align-self: start;
+	background: #a7bfe8;
+	border-radius: 1rem;
+  position: relative;
+  top: -350px;
+  right: -600px
+}
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+button {
+ 
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  position: relative;
+  top: -300px;
+  right: -1200px;
+}
+button.learnmore {
+  font-weight: 600;
+  color: #382b22;
+  text-transform: uppercase;
+  padding: 1.25em 2em;
+  background: #fff0f0;
+  border: 2px solid #b18597;
+  border-radius: 0.75em;
+  transform-style: preserve-3d;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learnmore::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #f9c4d2;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+}
+button.learnmore:hover {
+  background: #ffe9e9;
+  transform: translate(0, 0.25em);
+}
+button.learn.more:hover::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+  transform: translate3d(0, 0.5em, -1em);
+}
+button.learnmore:active {
+  background: #ffe9e9;
+  transform: translate(0em, 0.75em);
+}
+button.learnmore:active::before {
+  box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+  transform: translate3d(0, 0, -1em);
+}
+
+
+.card{
+  
+  top: -190px;
+}
+body .footer {
+  z-index: 1;
+  --footer-background:#ee9ca7;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+body .footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+body .footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+body .footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+body .footer .content a, body .footer .content p {
+  color: #F5F7FA;
+  text-decoration: none;
+}
+body .footer .content b {
+  color: white;
+}
+body .footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+body .footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .footer .content > div > div {
+  margin: 0.25rem 0;
+}
+body .footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+body .footer .content > div .image {
+  align-self: center;
+  width: 4rem;
+  height: 4rem;
+  margin: 0.25rem 0;
+  background-size: cover;
+  background-position: center;
+}
+
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
