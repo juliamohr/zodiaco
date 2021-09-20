@@ -20,7 +20,7 @@ body{
 
 .sttngs.tabordion input[name="sections"] {display:none;}
 
-.sttngs.tabordion section {display: block;}
+
 
 .tabordion section label {
   border-right:1px solid #a7bfe8;
@@ -40,7 +40,8 @@ body{
 
 .ver{color:#a7bfe8;}
 .tabordion section article {
-  display: none;backgdround:red;
+  display: none;
+  backgdround:red;
   padding-left: 200px;
   max-width: 100%;
   position: absolute;  
@@ -101,7 +102,7 @@ input, select, textarea {
 .input, .select, .textarea {
   padding: 10px;
   border:1px solid lightgray;
-  background-color: white;color:#aaa;letter-spacing:.7px;
+  background-color: white;color:black;letter-spacing:.7px;
 }
 .input:focus, .textarea:focus {
   border-color: gray;
@@ -284,31 +285,26 @@ input, select, textarea {
 .frm{padding:3%;}
 
 
-.tr span{display:inline-block;color:grey;font-size:11px;letter-spacing:0;font-weight:700;text-transform:none;}
-#texte{display:inline-block;color:grey;text-transfgorm:none;letter-spacing:0;}
+.tr span{display:inline-block;color:black;font-size:11px;letter-spacing:0;font-weight:700;text-transform:none;}
+#texte{display:inline-block;color:black;text-transfgorm:none;letter-spacing:0;}
 
-.sttngs button {
-  text-transform: uppercase;font-weight:800;letter-spacing:1px;
-  outline: 0;
-  background: #a7bfe8;
-  width: 200px;
-  border: 0;
-  padding: 15px;
-  color: #FFFFFF;
-  font-size: 14px;
-  -webkit-transition: all 0.3 ease;
-  transition: all 0.3 ease;
-  cursor: pointer;
-  border-radius:3px;margin-top:30px;
-  position: relative;
-    left: 50%;
-    transform: translate(-50%, 0px);
+.button {
+	margin-top: 1em;
+	padding: 1em;
+	width: 100%;
+	font-weight: 600;
+	background: #a7bfe8;
+	color: #fff;
+	border: 0;
+	border-radius: 0.3em;
+	cursor: pointer;
 }
-  
-  
-
-.sttngs button:hover, .sttngs  button:active, .sttngs button:focus {background: #a7bfe8;}
-
+.button:hover {
+	background: #a7bfe8;
+}
+.send {
+	margin-left: 0.5em;
+}
 
 
 

@@ -5,12 +5,12 @@
 * {margin: 0; padding: 0;}
 
 html {
-	height: 100%;
+	
 	/*Image only BG fallback*/
 	
 	/*background = gradient + image pattern combo*/
 	background: 
-	#97D5b1;
+	 #97D5b1;
 }
 
 body {
@@ -18,10 +18,13 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 400px;
-	margin: 270px auto;
+	width: 500px;
+	margin: 250px auto;
+  left: 680px;
 	text-align: center;
-	position: relative;
+	position:absolute;
+  background: 
+  #97D5b1;
 }
 #msform fieldset {
 	background: white;
@@ -53,19 +56,22 @@ body {
 	font-size: 13px;
 }
 /*buttons*/
-#msform .action-button {
-	width: 100px;
+.button {
+	margin-top: 1em;
+	padding: 1em;
+	width: 100%;
+	font-weight: 600;
 	background: #a7bfe8;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
+	color: #fff;
+	border: 0;
+	border-radius: 0.3em;
 	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #a7bfe8;
+.button:hover {
+	background: #a7bfe8;
+}
+.send {
+	margin-left: 0.5em;
 }
 /*headings*/
 .fs-title {
@@ -80,3 +86,5 @@ body {
 	color: #666;
 	margin-bottom: 20px;
 }
+
+  

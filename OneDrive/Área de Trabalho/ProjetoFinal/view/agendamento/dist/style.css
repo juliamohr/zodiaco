@@ -15,7 +15,7 @@ body {
 	align-items: center;
 }
 .container {
-	max-width: 700px;
+	max-width: 800px;
 	width: calc(100% - 100px); 
 }
 .header {
@@ -27,23 +27,23 @@ body {
 	text-transform: uppercase;
 }
 .form-container {
-	padding: 2em;
+	padding: 3rem;
 	background: #fff;
-	border-radius: 0.3em;
+	border-radius: 0.7em;
 }
 .subtitle {
-	margin-bottom: 2em;
+	margin-bottom: 2rem;
 	color: #444;
 	font-size: 0.8em;
 	text-align: center;
 }
 .form-section {
-	margin-bottom: 1em;
+	margin-bottom: 2em;
 	display: flex;
 	align-items: center;
 }
 .form-label {
-	width: 5em;
+	width: 7em;
 	margin-right: 1em;
 	font-size: 0.8em;
 	font-weight: 600;
