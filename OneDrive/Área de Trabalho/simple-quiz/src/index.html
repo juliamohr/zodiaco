@@ -1,0 +1,52 @@
+        <form id="msform" onsubmit="return false;">
+            <fieldset id="phase1">
+                <h2 class="fs-title">Qual seu nome e idade?</h2>
+                <h3 class="fs-subtitle">Etapa 1</h3>
+                <input type="text" id="name" name="name" placeholder="Nome" />
+                <input type="text" id="age" name="age" placeholder="Idade" />
+                <input type="button" name="next" class="next action-button" value="Próximo" />
+            </fieldset>
+            <fieldset id="phase2">
+                <h2 class="fs-title">Qual sua área do conhecimento preferida?</h2>
+                <h3 class="fs-subtitle">Etapa 2</h3>
+
+                <div class="radio-container">
+                    <div class="radio">
+                        <input id="radioExatas" name="radioArea" type="radio" checked>
+                        <label for="radioExatas" class="radio-label">Exatas</label>
+                    </div>
+
+                    <div class="radio">
+                        <input id="radioHumanas" name="radioArea" type="radio">
+                        <label  for="radioHumanas" class="radio-label">Humanas</label>
+                    </div>
+
+                    <div class="radio">
+                        <input id="radioBiologicas" name="radioArea" type="radio">
+                        <label for="radioBiologicas" class="radio-label">Biológicas</label>
+                    </div>
+                </div>
+
+                <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                <input type="button" name="next" class="next action-button" value="Próximo" />
+            </fieldset>
+            <fieldset id="phase3">
+                <h2 class="fs-title">Escolha um curso</h2>
+                <h3 class="fs-subtitle">Etapa 3</h3>
+
+                <div class="radio-container">
+                    <div class="radio">
+                        <input id="radioOpt1" name="radioOpt" type="radio" checked>
+                        <label for="radioOpt1" id="opt1" class="radio-label">Opt1</label>
+                    </div>
+
+                    <div class="radio">
+                        <input id="radioOpt2" name="radioOpt" type="radio">
+                        <label  for="radioOpt2" id="opt2" class="radio-label">Opt2</label>
+                    </div>
+                </div>
+
+                <input type="button" name="previous" class="previous action-button" value="Anterior" />
+                <input type="submit" name="submit" class="submit action-button" value="Enviar" />
+            </fieldset>
+        </form>

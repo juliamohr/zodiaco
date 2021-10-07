@@ -1,0 +1,10 @@
+cd git 
+cd projetoEntra21
+git add .
+git commit -a -m "mensagem"
+git push ou git push set-upstream origin "branch" 
+
+
+
+
+git pull 

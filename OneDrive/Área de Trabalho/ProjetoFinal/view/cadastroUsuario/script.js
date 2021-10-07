@@ -9,10 +9,10 @@ console.log(validateEmail('texto.com')); // false
 console.log(validateEmail('texto')); // false
 
 
-   var password = document.getElementById("myPassword")
+   var myPassword = document.getElementById("myPassword")
    , confirm_password = document.getElementById("confirm_password");
  
- function validatePassword(){
+ function validatemyPassword(){
    if(myPassword.value != confirm_password.value) {
      confirm_password.setCustomValidity("Senhas diferentes!");
    } else {
@@ -20,8 +20,8 @@ console.log(validateEmail('texto')); // false
    }
  }
  
- myPassword.onchange = validatePassword;
- confirm_password.onkeyup = validatePassword;
+ myPassword.onchange = validatemyPassword;
+ confirm_password.onkeyup = validatemyPassword;
 
 
  $("#submit").on("click", function() {
@@ -73,7 +73,12 @@ function mouseoutPass(obj) {
   var obj = document.getElementById('myPassword');
   obj.type = "password";
 }
-document.getElementById('cnpj').addEventListener('input', function (e) {
-  var x = e.target.value.replace(/\D/g, '').match(/(\d{0,2})(\d{0,3})(\d{0,3})(\d{0,4})(\d{0,2})/);
-  e.target.value = !x[2] ? x[1] : x[1] + '.' + x[2] + '.' + x[3] + '/' + x[4] + (x[5] ? '-' + x[5] : '');
+
+
+var cpf = document.querySelector("#cpf");
+
+cpf.addEventListener("keyup", () => {
+  let value = cpf.value.replace(/[^0-9]/g, "").replace(/^([\d]{3})([\d]{3})?([\d]{3})?([\d]{2})?/, "$1.$2.$3-$4");
+  
+  cpf.value = value;
 });
